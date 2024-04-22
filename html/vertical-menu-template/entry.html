@@ -498,44 +498,13 @@
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
                     <!-- Content -->
-
+                    
                     <div class="container-xxl flex-grow-1 container-p-y">
+                        <div class="d-flex justify-content-between mb-3">
+                            <p class="mb-0 me-0"> <b>Hand Cash: </b>BDT 5000</p>
+                            <p class="mb-0 me-0"> <b>Date: </b>22-Apr-2024</p>
+                        </div>
                         <div class="row gy-4">
-
-                            <div class="col-md-12 col-xl-12">
-                                <div class="row g-4">
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="card">
-                                            <h5 class="card-header d-flex justify-content-between" style="background-color: rgb(215, 215, 215);">
-                                                <b>Balance</b>
-                                                BDT 1,23,534
-                                            </h5>
-                                            <div class="table-responsive text-nowrap">
-                                                <table class="table table-striped">
-                                                    <tbody class="table-border-bottom-0">
-                                                        <tr>
-                                                            <td><b>Hand Cash</b></td>
-                                                            <td class="text-end">BDT 1200</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><b>MTB Bank</b></td>
-                                                            <td class="text-end">BDT 22000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><b>DBBL Bank</b></td>
-                                                            <td class="text-end">BDT 23000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><b>Agrani Bank</b></td>
-                                                            <td class="text-end">BDT 31000</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
 
                             <div class="col-md-12 col-xl-12">
@@ -543,292 +512,39 @@
                                     <div class="col-md-12 col-sm-12">
                                         <div class="card">
                                             <div class="card-body p-3">
-                                                <div class="d-flex justify-content-between mt-1">
-                                                    <h5 class="mb-0 me-0"> <b>20-Feb-2024</b> To <b>19-Mar-2024</b></h5>
-                                                    <a href data-bs-toggle="modal" data-bs-target="#modalCenter"><i
-                                                            class="mdi mdi-calendar-edit mdi-24px"></i></a>
+                                                <center><h4><b>Cash Expense</b></h4></center>
+                                                <div style="padding: 4px;background-color: #ff0000;height: 1px;width: 134px;position: absolute;top: 43px; border-radius: 5px;"></div>
+
+                                                
+                                                <div class="form-floating form-floating-outline mb-3">
+                                                    <input type="date" class="form-control" id="date" placeholder="John Doe" aria-describedby="dateHelp" />
+                                                    <label for="date">Date</label>
                                                 </div>
-                                                <div class="modal fade" id="modalCenter" tabindex="-1"
-                                                    aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h4 class="modal-title" id="modalCenterTitle">Date Range
-                                                                </h4>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body">
-                                                                <div class="row">
-                                                                    <div class="col mb-4 mt-2">
-                                                                        <div
-                                                                            class="form-floating form-floating-outline">
-                                                                            <input type="date" id="start_date"
-                                                                                class="form-control"
-                                                                                value="2024-02-20" />
-                                                                            <label for="start_date">Start Date</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col mb-2 mt-2">
-                                                                        <div
-                                                                            class="form-floating form-floating-outline">
-                                                                            <input type="date" id="end_date"
-                                                                                class="form-control"
-                                                                                value="2024-03-19" />
-                                                                            <label for="end_date">End Date</label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer d-flex justify-content-between">
-                                                                <button type="button" class="btn btn-label-secondary"
-                                                                    data-bs-dismiss="modal">
-                                                                    Close
-                                                                </button>
-                                                                <button type="button" class="btn btn-primary">Save
-                                                                    changes</button>
-                                                            </div>
-                                                        </div>
+                                                
+                                                <div class="form-floating form-floating-outline mb-3">
+                                                    <select class="form-select" id="souce" aria-label="Default select example">
+                                                        <option>Open this select menu</option>
+                                                        <option value="0">Cash</option>
+                                                        <option value="1">DBBL</option>
+                                                        <option value="2">MTB</option>
+                                                        <option value="3">Agrani</option>
+                                                    </select>
+                                                    <label for="souce">Source</label>
+                                                </div>
+                                                <div class="form-floating form-floating-outline mb-3">
+                                                    <input type="number" class="form-control" id="amount" placeholder="Amount in BDT" aria-describedby="amountHelp" autocomplete="off"/>
+                                                    <label for="amount">Amount</label>
+                                                    <div id="amountHelp" class="form-text">
+                                                        <b>Expected Hand Cash:</b> BDT 1500
+                                                        <br>Remaining Balance Adjustment
                                                     </div>
                                                 </div>
-                                                <div class="d-flex justify-content-between mt-2">
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3">
-                                                                <p class="mb-0 me-0"><b>Income</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #00d13f;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold" style="position: relative; top: 20%;">BDT 53000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #00d13f;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Expense</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #ff0000;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            43000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #ff0000;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between mt-3">
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Recv. Payment</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #00c4d6;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            4300</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #00c4d6;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Make Payment</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #ff631b;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            3200</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #ff631b;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between mt-3">
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Deposit</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #336dff;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            7000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #336dff;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Withdraw</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #ff1b7e;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            6000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #ff1b7e;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between mt-3">
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Bank Transfer</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #33d6ff;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            7000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #33d6ff;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Savings</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #00ffaa;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            6000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #00ffaa;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between mt-3">
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Lend</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #7033ff;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            7000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #7033ff;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Debt</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #ff1bbe;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            6000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #ff1bbe;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex justify-content-between mt-3">
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Expense</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #ff0000;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            43000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #ff0000;"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Expense</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #ff0000;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            43000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #ff0000;"> </span>
-                                                            </div>
-                                                        </div>
+                                                <div class="form-floating form-floating-outline mb-3">
+                                                    <input type="text" class="form-control" id="accounted_to" placeholder="Accounted To" aria-describedby="accounted_toHelp" autocomplete="off"/>
+                                                    <label for="accounted_to">Accounted To</label>
+                                                    <div id="accounted_toHelp" class="form-text">
+                                                        <b>Expected Hand Cash:</b> BDT 1500
+                                                        <br>Remaining Balance Adjustment
                                                     </div>
                                                 </div>
                                             </div>
