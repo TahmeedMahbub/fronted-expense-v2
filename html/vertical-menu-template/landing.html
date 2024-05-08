@@ -67,6 +67,10 @@
             font-size: 28px;
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
+
+        .dashboard-chart {
+            height: 230px;
+        }
     </style>
 </head>
 
@@ -137,6 +141,26 @@
                     </li>
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons mdi mdi-cash-fast mdi-rotate-180"></i>
+                            <div data-i18n="Payment"></div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Make Payment"></div><span class="card-badge"
+                                        style="background-color: #ff631b;"></span>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    <div data-i18n="Payment Receive"></div><span class="card-badge"
+                                        style="background-color: #00c4d6;"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons mdi mdi-bank"></i>
                             <div data-i18n="Bank"></div>
                         </a>
@@ -169,26 +193,6 @@
                                 <a href="#" class="menu-link">
                                     <div data-i18n="Savings"></div><span class="card-badge"
                                         style="background-color: #00ffaa;"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons mdi mdi-cash-fast mdi-rotate-180"></i>
-                            <div data-i18n="Payment"></div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="#" class="menu-link">
-                                    <div data-i18n="Make Payment"></div><span class="card-badge"
-                                        style="background-color: #ff631b;"></span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#" class="menu-link">
-                                    <div data-i18n="Payment Receive"></div><span class="card-badge"
-                                        style="background-color: #00c4d6;"></span>
                                 </a>
                             </li>
                         </ul>
@@ -896,43 +900,57 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex justify-content-between mt-2">
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3">
-                                                                <p class="mb-0 me-0"><b>Income</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #00d13f;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            53000</p>
-                                                                    </div>
+                                                <div class="col-xl-6 col-12 mt-3">
+                                                    <div class="row g-4">
+                                                        <div class="col-md-12 col-sm-12">
+                                                            <div class="card">
+                                                                <h5 class="card-header d-flex justify-content-between"
+                                                                    style="background-color: rgb(215, 215, 215);">
+                                                                    <b>Expense on Top 5 Individuals</b>
+                                                                </h5>
+                                                                <div class="table-responsive text-nowrap">
+                                                                    <table class="table table-striped">
+                                                                        <tbody class="table-border-bottom-0">
+                                                                            <tr>
+                                                                                <td><b>Tahmeed</b> <span class="badge rounded-pill bg-label-danger">1.5K</span></td>
+                                                                                <td class="text-end">BDT 1200</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><b>Mamun</b> <span class="badge rounded-pill bg-label-success">520</span></td>
+                                                                                <td class="text-end">BDT 22000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><b>Antu</b></td>
+                                                                                <td class="text-end">BDT 23000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td><b>Imran</b></td>
+                                                                                <td class="text-end">BDT 31000</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #00d13f;"> </span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div style="width: 48%;">
-                                                        <div class="card">
-                                                            <div class="card-body p-3 pe-3">
-                                                                <p class="mb-0 me-0"><b>Expense</b></p>
-                                                                <div class="d-flex justify-content-between mt-3">
-                                                                    <button type="button"
-                                                                        class="btn card-add-btn waves-effect text-white waves-light p-0"
-                                                                        style="background-color: #ff0000;">+</button>
-                                                                    <div>
-                                                                        <p class="mb-0 me-1 fw-semibold"
-                                                                            style="position: relative; top: 20%;">BDT
-                                                                            43000</p>
-                                                                    </div>
-                                                                </div>
-                                                                <span class="card-badge"
-                                                                    style="background-color: #ff0000;"> </span>
-                                                            </div>
+                                                </div>
+                                                <div class="col-xl-6 col-12 mt-3">
+                                                    <div class="card">
+                                                        <div class="card-header header-elements">
+                                                            <h5 class="card-title mb-0">Daily Expense</h5>
+                                                        </div>
+                                                        <div class="card-body overflow-scroll">
+                                                            <canvas id="dailyExpenseBarChart" class="dashboard-chart chartjs" data-height="400"></canvas>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6 col-12 mt-3">
+                                                    <div class="card">
+                                                        <div class="card-header header-elements">
+                                                            <h5 class="card-title mb-0">Person-wise Expense </h5>
+                                                        </div>
+                                                        <div class="card-body overflow-scroll">
+                                                            <div id="personalExpenseChart"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -991,7 +1009,6 @@
     <script src="../../assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
-    <!-- Vendors JS -->
     <script src="../../assets/vendor/libs/apex-charts/apexcharts.js"></script>
     <script src="../../assets/vendor/libs/swiper/swiper.js"></script>
 
@@ -1000,6 +1017,18 @@
 
     <!-- Page JS -->
     <script src="../../assets/js/dashboards-analytics.js"></script>
+
+    <!-- Vendors JS -->
+    <script src="../../assets/vendor/libs/chartjs/chartjs.js"></script>
+
+    <!-- Page JS -->
+    <script src="../../assets/js/charts-chartjs-data.js"></script>
+    <!-- MAIN PAGE SOURCE OF CHART:  ../../assets/js/charts-chartjs.js -->
+
+    
+    <script src="../../assets/js/charts-apex-data.js"></script>
+
+    
 </body>
 
 </html>
